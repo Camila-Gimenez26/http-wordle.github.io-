@@ -37,11 +37,11 @@ function intentar (){
             return
         }
 
-        if (INTENTO === palabra ) {
+       /* if (INTENTO === palabra ) {
             terminar("<h1>GANASTE!😀</h1>")
             //console.log("GANASTE!")
             return
-        }
+        }*/
         for (let i in palabra){
             const SPAN = document.createElement('span');
             SPAN.className = 'letter';
@@ -66,6 +66,11 @@ function intentar (){
             terminar("<h1>PERDISTE!😖</h1>")
             //console.log("PERDISTE!")
         }
+        if (INTENTO === palabra ) {
+            terminar("<h1>GANASTE!😀</h1>")
+            //console.log("GANASTE!")
+            return 
+          }
     }
 
     
